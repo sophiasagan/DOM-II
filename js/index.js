@@ -85,4 +85,11 @@ navFocus.addEventListener('focus', event => {
     navFocus.style.color = "purple";
 });
 
+//GSAP
 
+// TweenMax.to(header, {duration: 2, x: 300, ease: "elastic"});
+// TweenMax.to(header, 0.1, { x: "-=20", yoyo: true, repeat: 15 });
+
+// TweenMax.set(header, {transformOrigin: "50%"});
+TweenMax.to(header, {duration: 2, rotation: 360});
+TweenMax.from(header, {duration: 1.5, opacity: 0, scale: 0.3, ease: "back"});
