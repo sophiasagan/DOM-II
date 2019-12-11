@@ -33,11 +33,11 @@ busPic.addEventListener("mouseleave", () => {
 
 // COPY
 
-document.querySelector(".destination p").addEventListener("copy", thisFunction);
+const copy = document.querySelector('p');
 
-function thisFunction() {
-    alert("Copywritten Text - Do Not Copy!");
-}
+copy.addEventListener('copy', (e) => {
+    window.alert("Copywritten Text - Do Not Copy!");
+});
 
 // KEYDOWN 
 
